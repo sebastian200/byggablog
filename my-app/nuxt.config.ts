@@ -1,11 +1,15 @@
-export default defineNuxtConfig({
+export default {
     modules: [
         '@nuxt/content',
         '@nuxtjs/tailwindcss'
     ],
     genarate: {
+        target: 'static',
         routes: [
-
+            '/blog',
+            '/about',
+            '/contact',
+            '/portfolio',
         ]
 
     },
@@ -28,4 +32,4 @@ export default defineNuxtConfig({
         },
     },
 
-})
+}
